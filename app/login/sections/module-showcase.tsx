@@ -7,7 +7,7 @@ import { moduleTheme, type ModuleKey } from "@/lib/module-theme";
 import { recentBookings, type BookingType } from "@/lib/mock-data";
 import { cn } from "@/lib/cn";
 
-const tabs: { key: ModuleKey; bookingType: BookingType; label: string; icon: LucideIcon; checklist: string[] }[] = [
+const tabs: { key: ModuleKey; bookingType: BookingType | "Bus"; label: string; icon: LucideIcon; checklist: string[] }[] = [
   {
     key: "flights",
     bookingType: "Flight",
